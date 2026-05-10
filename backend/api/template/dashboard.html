@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+
+<h2>Dashboard</h2>
+
+<button onclick="loadDashboard()">Load Dashboard Data</button>
+
+<pre id="output"></pre>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+
+<h2>Dashboard</h2>
+
+<button onclick="loadDashboard()">Load Data</button>
+
+<pre id="output"></pre>
+
+<script>
+function loadDashboard() {
+    const token = localStorage.getItem("token");
+
+    fetch("/api/dashboard/", {
+        method: "GET",
+        headers: {
+            "Authorization": "Token " + token
+        }
+    })
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("output").innerText =
+            JSON.stringify(data, null, 2);
+    });
+}
+</script>
+
+</body>
+</html>
