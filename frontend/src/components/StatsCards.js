@@ -1,38 +1,3 @@
-// import React from 'react';
-// import { FaShoppingCart, FaDollarSign, FaUndoAlt, FaExclamationTriangle } from 'react-icons/fa';
-
-// const StatsCards = ({ data }) => {
-//   const cards = [
-//     { title: "Total Orders", value: data.totalOrders, change: data.ordersChange, icon: FaShoppingCart, color: "blue" },
-//     { title: "Revenue", value: `$${data.totalRevenue.toLocaleString()}`, change: data.revenueChange, icon: FaDollarSign, color: "green" },
-//     { title: "Refunds", value: `$${data.totalRefunds.toLocaleString()}`, icon: FaUndoAlt, color: "yellow" },
-//     { title: "Anomalies Detected", value: data.anomalies, icon: FaExclamationTriangle, color: "red" },
-//   ];
-
-//   return (
-//     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-//       {cards.map((card, idx) => (
-//         <div key={idx} className="bg-white rounded-xl shadow p-5 flex justify-between items-center">
-//           <div>
-//             <p className="text-gray-500 text-sm">{card.title}</p>
-//             <p className="text-2xl font-bold mt-1">{card.value}</p>
-//             {card.change && (
-//               <p className={`text-xs mt-1 ${card.change >= 0 ? 'text-green-600' : 'text-red-600'}`}>
-//                 {card.change >= 0 ? '↑' : '↓'} {Math.abs(card.change)}% from last week
-//               </p>
-//             )}
-//           </div>
-//           <div className={`p-3 rounded-full bg-${card.color}-100 text-${card.color}-600`}>
-//             <card.icon size={24} />
-//           </div>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default StatsCards;
-
 import React from 'react';
 
 const Card = ({ title, value, sub, icon, accent }) => {

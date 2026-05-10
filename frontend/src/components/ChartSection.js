@@ -1,29 +1,3 @@
-// import React from 'react';
-// import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-// import { chartData } from '../data/dummyData';
-
-// const ChartSection = () => {
-//   return (
-//     <div>
-//       <h3 className="text-lg font-semibold mb-4">Daily Transactions</h3>
-//       <ResponsiveContainer width="100%" height={300}>
-//         <BarChart data={chartData}>
-//           <CartesianGrid strokeDasharray="3 3" />
-//           <XAxis dataKey="name" />
-//           <YAxis yAxisId="left" orientation="left" stroke="#3b82f6" />
-//           <YAxis yAxisId="right" orientation="right" stroke="#10b981" />
-//           <Tooltip />
-//           <Legend />
-//           <Bar yAxisId="left" dataKey="orders" fill="#3b82f6" name="Orders" />
-//           <Bar yAxisId="right" dataKey="revenue" fill="#10b981" name="Revenue ($)" />
-//         </BarChart>
-//       </ResponsiveContainer>
-//     </div>
-//   );
-// };
-
-// export default ChartSection;
-
 import React from 'react';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,

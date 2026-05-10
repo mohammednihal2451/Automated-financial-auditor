@@ -1,35 +1,3 @@
-// import React from 'react';
-// import { anomalyAlerts } from '../data/dummyData';
-
-// const AlertsPanel = () => {
-//   const severityColor = {
-//     high: 'text-red-800 bg-red-100',
-//     medium: 'text-yellow-800 bg-yellow-100',
-//     low: 'text-blue-800 bg-blue-100',
-//   };
-
-//   return (
-//     <div>
-//       <h3 className="text-lg font-semibold mb-3">⚠️ Anomaly Alerts</h3>
-//       <div className="space-y-3">
-//         {anomalyAlerts.map((alert) => (
-//           <div key={alert.id} className="border-l-4 border-red-400 bg-gray-50 p-3 rounded-r-md">
-//             <div className="flex justify-between items-start">
-//               <p className="text-sm text-gray-800">{alert.message}</p>
-//               <span className={`text-xs px-2 py-1 rounded-full ${severityColor[alert.severity]}`}>
-//                 {alert.severity}
-//               </span>
-//             </div>
-//             <p className="text-xs text-gray-400 mt-1">{alert.time}</p>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default AlertsPanel;
-
 import React from 'react';
 
 const AlertsPanel = ({ statsData, issueCounts }) => {
